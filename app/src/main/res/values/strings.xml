@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyCalculator</string>
+    <string name="app_name">Ilias Calculator</string>
     <string name="calc_text">0</string>
     <string name="_7">7</string>
     <string name="_8">8</string>
@@ -17,5 +17,6 @@
     <string name="_CLR">CLR</string>
     <string name="_Plus">+</string>
     <string name="_equals">=</string>
+    <string name="_dot">.</string>
 
 </resources>

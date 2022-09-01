@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@color/lightGrey"
@@ -56,7 +57,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="2dp"
             android:text="@string/_divide"
             />
@@ -100,7 +101,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="2dp"
             android:text="@string/_multiply"
             />
@@ -144,7 +145,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="2dp"
             android:text="@string/_subtract"
             />
@@ -156,21 +157,30 @@
         android:layout_weight="1"
         >
         <Button
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDot"
+            android:layout_margin="2dp"
+            android:text="@string/_dot"
+            />
+        <Button
             android:id="@+id/btnZero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:onClick="onDigit"
+            android:layout_weight="1"
+            android:onClick="onZero"
             android:layout_margin="2dp"
             android:text="@string/_0"
-
             />
+
         <Button
             android:id="@+id/btnCLR"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             android:layout_margin="2dp"
             android:text="@string/_CLR"
             />
@@ -180,7 +190,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_margin="2dp"
             android:text="@string/_Plus"
             />
@@ -196,7 +206,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:onClick="onDigit"
+            android:onClick="onEqual"
             android:layout_margin="2dp"
             android:text="@string/_equals"
             />
